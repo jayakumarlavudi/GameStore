@@ -1,0 +1,29 @@
+GET http://localhost:5064/games
+
+###
+GET http://localhost:5064/games/6
+
+###
+POST http://localhost:5064/games
+Content-Type: application/json
+
+{
+    "name": "Cricket",
+    "genreId": 2,
+    "price": 25.69,
+    "releaseDate": "1940-11-18"
+}
+
+###
+PUT  http://localhost:5064/games/6
+Content-Type: application/json
+
+{
+    "name": "Indian Hockey",
+    "genreId": 4,
+    "price": 12.19,
+    "releaseDate": "2010-10-10"
+}
+
+###
+DELETE http://localhost:5064/games/5
